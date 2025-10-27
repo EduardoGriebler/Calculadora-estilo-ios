@@ -64,11 +64,13 @@
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
             this.pnlBarraTitulo.Size = new System.Drawing.Size(326, 35);
             this.pnlBarraTitulo.TabIndex = 0;
+            this.pnlBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlBarraTitulo_MouseDown);
             // 
             // btnFechar
             // 
             this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
             this.btnFechar.Location = new System.Drawing.Point(276, 0);
@@ -77,11 +79,15 @@
             this.btnFechar.TabIndex = 1;
             this.btnFechar.Text = "✖";
             this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            this.btnFechar.MouseEnter += new System.EventHandler(this.btnFechar_MouseEnter);
+            this.btnFechar.MouseLeave += new System.EventHandler(this.btnFechar_MouseLeave);
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMaximizar.FlatAppearance.BorderSize = 0;
+            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximizar.ForeColor = System.Drawing.Color.White;
             this.btnMaximizar.Location = new System.Drawing.Point(226, 0);
@@ -90,11 +96,15 @@
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.Text = "🗖";
             this.btnMaximizar.UseVisualStyleBackColor = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            this.btnMaximizar.MouseEnter += new System.EventHandler(this.btnMaximizar_MouseEnter);
+            this.btnMaximizar.MouseLeave += new System.EventHandler(this.btnMaximizar_MouseLeave);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.Color.White;
             this.btnMinimizar.Location = new System.Drawing.Point(176, 0);
@@ -103,6 +113,9 @@
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.Text = "🗕";
             this.btnMinimizar.UseVisualStyleBackColor = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            this.btnMinimizar.MouseEnter += new System.EventHandler(this.btnMinimizar_MouseEnter);
+            this.btnMinimizar.MouseLeave += new System.EventHandler(this.btnMinimizar_MouseLeave);
             // 
             // btnMudancaDeSinal
             // 
@@ -117,6 +130,7 @@
             this.btnMudancaDeSinal.Size = new System.Drawing.Size(71, 50);
             this.btnMudancaDeSinal.TabIndex = 2;
             this.btnMudancaDeSinal.UseVisualStyleBackColor = false;
+            this.btnMudancaDeSinal.Click += new System.EventHandler(this.btnMudancaDeSinal_Click);
             // 
             // btn0
             // 
@@ -131,6 +145,7 @@
             this.btn0.TabIndex = 2;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnVirgula
             // 
@@ -145,6 +160,7 @@
             this.btnVirgula.Size = new System.Drawing.Size(71, 50);
             this.btnVirgula.TabIndex = 2;
             this.btnVirgula.UseVisualStyleBackColor = false;
+            this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnIgual
             // 
@@ -159,6 +175,7 @@
             this.btnIgual.Size = new System.Drawing.Size(71, 50);
             this.btnIgual.TabIndex = 2;
             this.btnIgual.UseVisualStyleBackColor = false;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btn1
             // 
@@ -173,6 +190,7 @@
             this.btn1.TabIndex = 2;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn2
             // 
@@ -187,6 +205,7 @@
             this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn3
             // 
@@ -201,6 +220,7 @@
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnSoma
             // 
@@ -215,6 +235,7 @@
             this.btnSoma.Size = new System.Drawing.Size(71, 50);
             this.btnSoma.TabIndex = 2;
             this.btnSoma.UseVisualStyleBackColor = false;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
             // btn4
             // 
@@ -229,6 +250,7 @@
             this.btn4.TabIndex = 2;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn5
             // 
@@ -243,6 +265,7 @@
             this.btn5.TabIndex = 2;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn6
             // 
@@ -257,6 +280,7 @@
             this.btn6.TabIndex = 2;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnSubtracao
             // 
@@ -271,6 +295,7 @@
             this.btnSubtracao.Size = new System.Drawing.Size(71, 50);
             this.btnSubtracao.TabIndex = 2;
             this.btnSubtracao.UseVisualStyleBackColor = false;
+            this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
             // 
             // btn7
             // 
@@ -285,6 +310,7 @@
             this.btn7.TabIndex = 2;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn8
             // 
@@ -299,6 +325,7 @@
             this.btn8.TabIndex = 2;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn9
             // 
@@ -313,6 +340,7 @@
             this.btn9.TabIndex = 2;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnMultiplicacao
             // 
@@ -327,6 +355,7 @@
             this.btnMultiplicacao.Size = new System.Drawing.Size(71, 50);
             this.btnMultiplicacao.TabIndex = 2;
             this.btnMultiplicacao.UseVisualStyleBackColor = false;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
             // 
             // btnApagar
             // 
@@ -341,6 +370,7 @@
             this.btnApagar.Size = new System.Drawing.Size(71, 50);
             this.btnApagar.TabIndex = 2;
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnAC
             // 
@@ -354,6 +384,7 @@
             this.btnAC.TabIndex = 2;
             this.btnAC.Text = "AC";
             this.btnAC.UseVisualStyleBackColor = false;
+            this.btnAC.Click += new System.EventHandler(this.btnAC_Click);
             // 
             // btnRaiz
             // 
@@ -368,6 +399,7 @@
             this.btnRaiz.Size = new System.Drawing.Size(71, 50);
             this.btnRaiz.TabIndex = 2;
             this.btnRaiz.UseVisualStyleBackColor = false;
+            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
             // btnDivisao
             // 
@@ -382,6 +414,7 @@
             this.btnDivisao.Size = new System.Drawing.Size(71, 50);
             this.btnDivisao.TabIndex = 2;
             this.btnDivisao.UseVisualStyleBackColor = false;
+            this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
             // 
             // txtResultado
             // 
